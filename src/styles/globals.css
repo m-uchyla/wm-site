@@ -22,7 +22,7 @@ body {
   ;
 }
 
-/*----------------------------------- GLOBAL SETTINGS -----------------------------------*/
+/*------------------------------------------------------------------------------------*/
 
 .text-gradient {
   background: radial-gradient(
@@ -51,4 +51,17 @@ body {
   
   --x: 100%;
   
+}
+
+.bg-blue-gradient:active{
+  transition: .2s;
+  -webkit-box-shadow: inset 8px 8px 20px -14px rgba(66, 68, 90, 1);
+  -moz-box-shadow: inset 8px 8px 20px -14px rgba(66, 68, 90, 1);
+  box-shadow: inset 8px 8px 20px -14px rgba(66, 68, 90, 1);
+}
+
+.flex-center{
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
