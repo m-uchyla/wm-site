@@ -48,9 +48,7 @@ body {
 }
 
 .bg-blue-gradient:hover{
-  
   --x: 100%;
-  
 }
 
 .bg-blue-gradient:active{
@@ -58,6 +56,23 @@ body {
   -webkit-box-shadow: inset 8px 8px 20px -14px rgba(66, 68, 90, 1);
   -moz-box-shadow: inset 8px 8px 20px -14px rgba(66, 68, 90, 1);
   box-shadow: inset 8px 8px 20px -14px rgba(66, 68, 90, 1);
+}
+
+.border-gradient {
+  transition: .5s;
+  background: -webkit-linear-gradient(45deg,#00d8ff, #9dedf0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  border-image: linear-gradient(90deg, #00d8ff, #9dedf0) 1;
+}
+
+.border-gradient:hover{
+  background: -webkit-linear-gradient(45deg,#9dedf0, #00d8ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  border-image: linear-gradient(90deg, #9dedf0, #00d8ff) 1;
 }
 
 .flex-center{
