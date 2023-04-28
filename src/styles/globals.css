@@ -22,6 +22,19 @@ body {
   ;
 }
 
+section {
+ @apply
+  xl:max-w-[1280px] 
+  w-full
+  sm:px-16
+  px-6
+  flex
+  justify-between
+  items-center
+  ;
+}
+
+
 /*------------------------------------------------------------------------------------*/
 
 .text-gradient {
@@ -60,23 +73,41 @@ body {
 
 .border-gradient {
   transition: .5s;
-  background: -webkit-linear-gradient(45deg,#00d8ff, #9dedf0);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  border-image: linear-gradient(90deg, #00d8ff, #9dedf0) 1;
+  position: relative;
+	border: 5px solid transparent;
+  @apply 
+  bg-background;
+  background-clip: padding-box;
+  border-radius: 12px;
+}
+.border-gradient::after{
+  transition: all .5s ease-in;
+  content: '';
+  position: absolute;
+  top: -3px;
+  bottom: -3px;
+  left: -3px;
+  right: -3px;
+  background: linear-gradient(to bottom right, #9dedf0, #00d8ff);
+  z-index: -1;
+  border-radius: 10px;
 }
 
-.border-gradient:hover{
-  background: -webkit-linear-gradient(45deg,#9dedf0, #00d8ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  border-image: linear-gradient(90deg, #9dedf0, #00d8ff) 1;
+.border-gradient:hover::after{
+  background: linear-gradient(to top right, #00d8ff, #9dedf0);
 }
 
 .flex-center{
   display:flex;
   justify-content: center;
   align-items: center;
+}
+
+.border-button {
+  transition: .5s;
+  background: -webkit-linear-gradient(45deg,#00d8ff, #9dedf0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  border-image: linear-gradient(90deg, #00d8ff, #9dedf0) 1;
 }
