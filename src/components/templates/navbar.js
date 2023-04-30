@@ -23,12 +23,12 @@ export default function Navbar() {
       <div>
         <Image 
         src={WMlogo}
-        width={30}
+        width={50}
         />
       </div>
       <ul className="flex">
         {navLinks.map((link, index) => (
-          <li className={`text-[10px] ${index === navLinks.length - 1 ? "mr-0" : "mr-2"} cursor-pointer`}>{link.title}</li>
+          <li className={`text-[18px] ${index === navLinks.length - 1 ? "mr-0" : "mr-4"} cursor-pointer`}>{link.title}</li>
         ))}
       </ul>
     </nav>
