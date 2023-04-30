@@ -1,7 +1,7 @@
 import { WMlogo } from "../../assets"
 import { navLinks } from "@/constants"
 import Image from "next/image"
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Navbar() {
   const [navbar, setNavbar] = useState(false);
@@ -13,7 +13,10 @@ export default function Navbar() {
       setNavbar(false)
     }
   }
-  window.addEventListener('scroll', changeBackground);
+  useEffect(() => {
+    window.addEventListener('scroll', changeBackground);
+  },[])
+
 
   return (
     <nav className={`flex justify-between py-1 ${navbar ? "navbar-down" : "navbar-up"}`}>
