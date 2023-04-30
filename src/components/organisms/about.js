@@ -1,4 +1,5 @@
 import { about } from "@/constants";
+import Image from "next/image";
 
 
 export default function About() {
@@ -10,8 +11,9 @@ export default function About() {
         </h2>
         <div className="flex justify-between pt-16">
         {about.map((elem, index) => (
-          <div className="max-w-[325px] flex flex-col items-center ">
-            <div className="bg-blue-gradient w-[60px] h-[60px] opacity-75 rounded-full">
+          <div key={index} className="max-w-[325px] flex flex-col items-center ">
+            <div className="bg-blue-gradient w-[60px] h-[60px] opacity-75 rounded-full flex justify-center items-center">
+              <elem.img size={40} className="text-background"/>
             </div>
             <h2 className="text-[24px] font-bold">{elem.title}</h2>
             <p className="text-[16px] text-secondaryText text-center">{elem.description}</p>
