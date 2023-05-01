@@ -26,7 +26,7 @@ section, footer {
  @apply
   sm:px-[20%]
   px-6
-  sm:py-[20px]
+  sm:py-[40px]
   py-[10px]
   ;
 }
