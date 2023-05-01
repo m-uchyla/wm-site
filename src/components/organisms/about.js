@@ -29,10 +29,10 @@ export default function About() {
           <motion.div 
             key={index} 
             className="max-w-[325px] flex flex-col items-center"
-            initial={{ opacity: 0, y: 150 }}
-            whileInView={{ opacity: 1, y: 50, }}
+            initial={{ opacity: 0, x: -150 }}
+            whileInView={{ opacity: 1, x: 0, }}
             viewport={{ once: true, amount: 0.1 }}
-            transition={{ delay: index === 0 ? 0.1 : index === 1 ? 0.3 : 0.5 }}
+            transition={{ delay: index === 0 ? 0.3 : index === 1 ? 0.5 : 0.7 }}
           >
             <div className="bg-blue-gradient w-[60px] h-[60px] opacity-75 rounded-full flex justify-center items-center">
               <elem.img size={40} className="text-background"/>
