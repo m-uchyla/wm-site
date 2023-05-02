@@ -1,6 +1,7 @@
 import { pricing } from "@/constants"
 import { Card, Button, SectionHeader, MiniCard } from "../index"
-import { GoCheck, GoHeart } from "react-icons/go";
+import { GoCheck } from "react-icons/go";
+import { motion } from "framer-motion"
 
 export default function Pricing() {
 
@@ -10,15 +11,24 @@ export default function Pricing() {
       elements[i].style.color = (isHovered ? "white" : "");
       elements[i].style.scale = (isHovered ? "1.1" : "");
       elements[i].style.transitionDuration  = "0.5s";
+      elements[i].style.padding = (isHovered ? "5px" : "0");
     }
   }
 
     return (
       <section>
         <SectionHeader header={"Poznaj naszą ofertę"} subheader={"Potrzebujesz strony napisanej od zera? Wybierz coś dla siebie"} />
-        <div className="flex lg:flex-row flex-col justify-between gap-5">
+        <div className="flex lg:flex-row flex-col justify-between gap-7">
           {pricing.map((plan, index) => (
-            <Card className={(index==1 ? "border-2 border-primary" : "")}>
+            <motion.div 
+              key={"pricing|"+index}
+              className="flex-1"
+              initial={{ opacity: 0, x: -150 }}
+              whileInView={{ opacity: 1, x: 0, }}
+              viewport={{ once: true, amount: 0.1 }}
+              transition={{ delay: index === 0 ? 0.3 : index === 1 ? 0.5 : 0.7, duration: 1 }}
+            > 
+            <Card className={(index==1 ? "border-2 border-primary" : "")+" h-full"}>
               <h4 className="text-[24px] font-semibold xl:h-[40px] h-auto">{plan.title}</h4>
               <p className="text-secondaryText xl:h-[80px]">{plan.desc}</p>
               <div className="h-[60px] md:m-0 mt-4">
@@ -40,6 +50,7 @@ export default function Pricing() {
                 </ul>
               </div>
             </Card>
+            </motion.div>
           ))}
         </div>
       </section>

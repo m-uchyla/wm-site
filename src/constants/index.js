@@ -158,7 +158,10 @@ export const pricing = [
                 feature: "Formularz kontaktowy"
             },
             {
-                feature: "Anglojęzyczna wersja strony"
+                feature: "Animowana zawartość strony"
+            },
+            {
+                feature: "Anglojęzyczna wersja tekstów"
             },
             {
                 feature: "Zintegrowany Facebook chat"
