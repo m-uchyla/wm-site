@@ -26,7 +26,7 @@ section, footer {
  @apply
   sm:px-[20%]
   px-6
-  sm:py-[40px]
+  sm:py-[80px]
   py-[10px]
   ;
 }
@@ -50,7 +50,8 @@ nav {
 .navbar-down{
   z-index: 10;
   transition: 0.5s;
-  background-color: #05041b33;
+  @apply
+  bg-background;
   backdrop-filter: blur(2px);
   box-shadow:
   0px 0.6px 3.6px -6px rgba(0, 0, 0, 0.053),

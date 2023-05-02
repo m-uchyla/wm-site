@@ -19,7 +19,7 @@ export default function Navbar() {
 
 
   return (
-    <nav className={`flex justify-between py-1 ${navbar ? "navbar-down" : "navbar-up"}`}>
+    <nav className={`flex justify-between py-3 ${navbar ? "navbar-down" : "navbar-up"}`}>
       <div>
         <Image 
         src={WMlogo}
