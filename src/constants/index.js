@@ -1,6 +1,6 @@
 import {GiPencilRuler, GiPodiumWinner} from "react-icons/gi";
 import { FaWrench } from "react-icons/fa";
-import { done, idea, preview, working, pizza, trainer } from "../assets/index"
+import { done, idea, preview, working, pizza, trainer, testimonial01 } from "../assets/index"
 
 export const navLinks = [
     {
@@ -195,5 +195,32 @@ export const portfolio = [
             'Menu',
             'Sekcja z animowanym losowaniem'
         ]
+    },
+]
+
+export const testimonials = [
+    {
+        name:"Kuba",
+        job: "Java Developer",
+        desc:"This is a great app and the value is amazing. Since I purchased it I have been using it everyday! Highly recommend it. ",
+        img:testimonial01
+    },
+    {
+        name:"Adam",
+        job: "Consultant",
+        desc:"This is a great app and the value is amazing. Since I purchased it I have been using it everyday! Highly recommend it. ",
+        img:testimonial01
+    },
+    {
+        name:"Dawid",
+        job: "Software Developer",
+        desc:"This is a great app and the value is amazing. Since I purchased it I have been using it everyday! Highly recommend it. ",
+        img:testimonial01
+    },
+    {
+        name:"Tomek",
+        job: "DevOps",
+        desc:"This is a great app and the value is amazing. Since I purchased it I have been using it everyday! Highly recommend it. ",
+        img:testimonial01
     },
 ]

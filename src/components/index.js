@@ -12,6 +12,7 @@ import Hero from "./organisms/hero"
 import Pricing from "./organisms/pricing"
 import How from "./organisms/how"
 import Portfolio from "./organisms/portfolio"
+import Testimonials from "./organisms/testimonials"
 
 import Footer from "./templates/footer"
 import Navbar from "./templates/navbar"
@@ -33,6 +34,7 @@ export {
     Pricing,
     How,
     Portfolio,
+    Testimonials,
     /*--- TEMPLATES ---*/ 
     Footer,
     Navbar,
