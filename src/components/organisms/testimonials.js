@@ -6,7 +6,7 @@ export default function Testimonials(){
     return(
         <section>
             <SectionHeader header={"Co się o nas mówi?"} subheader={"Opinie naszych klientów i osób z którymi współpracowaliśmy"} />
-            <div className="flex gap-3">
+            <div className="flex gap-3 flex-col md:flex-row">
             {testimonials.map((testimonial, index) => (
                 <div className="flex-center flex-col text-center">
                     <Image 
