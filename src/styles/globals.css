@@ -22,7 +22,7 @@ body {
   ;
 }
 
-section, footer {
+section{
   background: radial-gradient(circle, rgba(22,20,65,0.2) 0%, rgba(5,4,27,1) 100%);
  @apply
   sm:px-[20%]
@@ -38,7 +38,15 @@ nav {
   sm:px-[20%]
   px-6
   ;
+}
 
+footer {
+  background: radial-gradient(circle, rgba(22,20,65,0.2) 0%, rgba(5,4,27,1) 100%);
+ @apply
+  sm:px-[20%]
+  py-6
+  px-6
+  ;
 }
 
 
