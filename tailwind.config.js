@@ -11,6 +11,7 @@ module.exports = {
         primary: "#00d8ff",
         secondary: "#5eead4",
         background:"#05041b",
+        card:"#1b1a29",
         primaryText:"#ffffff",
         secondaryText:"#9ca3af",
       },

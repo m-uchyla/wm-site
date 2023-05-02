@@ -64,3 +64,105 @@ export const howItsDone = [
         img: done
     },
 ]
+
+export const pricing = [
+    {
+        title: "Basic Plan",
+        desc: "Strona-wizytówka w najlepszej proporcji jakości do ceny",
+        price: 1299,
+        discount: 0,
+        features: [
+            {
+                feature: "Własna Domena"
+            },
+            {
+                feature: "Roczny hosting i certyfikat SSL"
+            },
+            {
+                feature: "Firmowy mail"
+            },
+            {
+                feature: "Bez podstron"
+            },
+            {
+                feature: "Optymalizacja SEO strony"
+            },
+            {
+                feature: "Google Analytics"
+            },
+            {
+                feature: "Wsparcie miesiąc GRATIS"
+            },
+        ]
+    }, 
+    {
+        title: "Standard Plan",
+        desc: "Propozycja dla małych biznesów, które potrzebują większej ilości treści na stronie",
+        price: 1899,
+        discount: 0,
+        features: [
+            {
+                feature: "Własna domena"
+            },
+            {
+                feature: "Roczny hosting i certyfikat SSL"
+            },
+            {
+                feature: "5 firmowych maili"
+            },
+            {
+                feature: "Do trzech podstron"
+            },
+            {
+                feature: "Optymalizacja SEO strony"
+            },
+            {
+                feature: "Google Analytics"
+            },
+            {
+                feature: "Wsparcie 2 miesiące GRATIS"
+            },
+            {
+                feature: "Formularz kontaktowy"
+            },
+        ]
+    }, 
+    {
+        title: "Premium Plan",
+        desc: "Okazała strona dla małych i średnich biznesów oraz długoterminowe wsparcie",
+        price: 2499,
+        discount: 0,
+        features: [
+            {
+                feature: "Własna domena"
+            },
+            {
+                feature: "Roczny hosting i certyfikat SSL"
+            },
+            {
+                feature: "Dowolna ilość firmowych maili"
+            },
+            {
+                feature: "Bez limitu podstron"
+            },
+            {
+                feature: "Optymalizacja SEO strony"
+            },
+            {
+                feature: "Google Analytics"
+            },
+            {
+                feature: "Wsparcie 6 miesięcy GRATIS"
+            },
+            {
+                feature: "Formularz kontaktowy"
+            },
+            {
+                feature: "Anglojęzyczna wersja strony"
+            },
+            {
+                feature: "Zintegrowany Facebook chat"
+            },
+        ]
+    }, 
+]

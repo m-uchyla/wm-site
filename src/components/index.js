@@ -1,6 +1,7 @@
 import Button from "./atoms/button"
 import Input from "./atoms/input"
 import SectionHeader from "./atoms/sectionHeader"
+import MiniCard from "./atoms/miniCard"
 
 import Card from "./molecules/card"
 import Form from "./molecules/form"
@@ -20,6 +21,7 @@ export {
     Button,
     Input,
     SectionHeader,
+    MiniCard,
     /*--- MOLECULES ---*/ 
     Card,
     Form,
