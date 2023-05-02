@@ -144,3 +144,39 @@ footer {
   background-clip: text;
   border-image: linear-gradient(90deg, #00d8ff, #9dedf0) 1;
 }
+
+/*-------------------- PORTFOLIO --------------------*/
+.portfolio-container {
+  position: relative;
+}
+
+.portfolio-image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.portfolio-desc {
+  display: none;
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.portfolio-container:hover .portfolio-image {
+  opacity: 0.4;
+}
+
+.portfolio-container:hover .portfolio-desc {
+  opacity: 1;
+  display: inline;
+}
+/*----------------------------------------*/

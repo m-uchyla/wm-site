@@ -5,6 +5,8 @@ import done from "./isometric/done.png"
 import idea from "./isometric/idea.png"
 import preview from "./isometric/preview.png"
 import working from "./isometric/working.png"
+import trainer from './portfolio/trainer.png'
+import pizza from './portfolio/pizza.png'
 
 export {
     favicon,
@@ -13,5 +15,7 @@ export {
     done,
     idea,
     preview,
-    working
+    working,
+    trainer,
+    pizza
 }

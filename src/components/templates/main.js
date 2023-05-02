@@ -1,4 +1,4 @@
-import { About, Contact, Hero, Pricing, How } from '../index'
+import { About, Contact, Hero, Pricing, How, Portfolio } from '../index'
 
 export default function Main() {
     return (
@@ -10,6 +10,7 @@ export default function Main() {
         <div className="bg-[rgba(255,255,255,0.15)] h-[1px] sm:mx-[20%] mx-6" />
         <Pricing />
         <div className="bg-[rgba(255,255,255,0.15)] h-[1px] sm:mx-[20%] mx-6" />
+        <Portfolio />
         <Contact />
       </>
     )

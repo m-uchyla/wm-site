@@ -1,6 +1,6 @@
 import {GiPencilRuler, GiPodiumWinner} from "react-icons/gi";
 import { FaWrench } from "react-icons/fa";
-import { done, idea, preview, working } from "../assets/index"
+import { done, idea, preview, working, pizza, trainer } from "../assets/index"
 
 export const navLinks = [
     {
@@ -168,4 +168,32 @@ export const pricing = [
             },
         ]
     }, 
+]
+
+export const portfolio = [
+    {
+        title:"Spartan Trener",
+        desc: "Landing site dla trenera personalnego",
+        img:trainer,
+        link:"https://spartan-trener.online/",
+        features:[
+            'Landing site',
+            'Animowane zdjęcia',
+            'Sekcja oferty',
+            'Formularz kontaktowy'
+        ]
+    },
+    {
+        title:"Pizza Eccezionale",
+        desc: "Strona internetowa pizzerii z kilkoma podstronami",
+        img:pizza,
+        link:"https://pizzaeccezionale.online/",
+        features:[
+            '3 podstrony',
+            'Sekcja ocen',
+            'Formularz kontaktowy',
+            'Menu',
+            'Sekcja z animowanym losowaniem'
+        ]
+    },
 ]
