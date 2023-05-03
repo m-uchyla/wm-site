@@ -8,6 +8,7 @@ import working from "./isometric/working.png"
 import trainer from './portfolio/trainer.png'
 import pizza from './portfolio/pizza.png'
 import testimonial01 from "./testimonials/testimonial01.jpg"
+import aboutImg from "./about.png"
 
 export {
     favicon,
@@ -19,5 +20,6 @@ export {
     working,
     trainer,
     pizza,
-    testimonial01
+    testimonial01,
+    aboutImg
 }

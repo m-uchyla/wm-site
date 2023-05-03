@@ -1,5 +1,5 @@
 import {GiPencilRuler, GiPodiumWinner} from "react-icons/gi";
-import { FaWrench } from "react-icons/fa";
+import { FaWrench, FaBolt, FaPencilRuler, FaChartLine } from "react-icons/fa";
 import { done, idea, preview, working, pizza, trainer, testimonial01 } from "../assets/index"
 
 export const navLinks = [
@@ -7,6 +7,11 @@ export const navLinks = [
         id: "about",
         title: "O nas",
         href: "about"
+    },
+    {
+        id: "howItsDone",
+        title: "Jak działamy",
+        href: "howItsDone"
     },
     {
         id: "pricing",
@@ -26,14 +31,19 @@ export const navLinks = [
 ]
 export const about = [
     {
-        img: GiPencilRuler,
-        title: "Strony na wymiar",
+        img: FaPencilRuler,
+        title: "Indywidualizm",
         description: "Twój pomysł + nasze wykonanie = Strona idealnie skrojona pod Ciebie!",
     },
     {
-        img: GiPodiumWinner,
+        img: FaChartLine,
         title: "Pozycjonowanie",
-        description: "Zadbamy o to, żeby Twoja strona była widoczna w sieci!",
+        description: "Nasze strony są dostosowanie do wyszukiwarek internetowych",
+    },
+    {
+        img: FaBolt,
+        title: "Prędkość",
+        description: "Dzięki nowoczesnej technologii, Twoja strona załaduje się błyskawicznie",
     },
     {
         img: FaWrench,

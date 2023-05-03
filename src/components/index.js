@@ -2,9 +2,11 @@ import Button from "./atoms/button"
 import Input from "./atoms/input"
 import SectionHeader from "./atoms/sectionHeader"
 import MiniCard from "./atoms/miniCard"
+import TelInput from "./atoms/telInput"
 
-import Card from "./molecules/card"
+import Card from "./atoms/card"
 import Form from "./molecules/form"
+import Popup from "./molecules/popup"
 
 import About from "./organisms/about"
 import Contact from "./organisms/contact"
@@ -24,9 +26,11 @@ export {
     Input,
     SectionHeader,
     MiniCard,
+    TelInput,
     /*--- MOLECULES ---*/ 
     Card,
     Form,
+    Popup,
     /*--- ORGANISMS ---*/ 
     About,
     Contact,

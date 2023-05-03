@@ -25,7 +25,6 @@ export default function Navbar() {
     window.addEventListener('scroll', changeBackground);
     setSections(document.querySelectorAll("section"));
     setNavLi(document.querySelectorAll("[id='navLink']"));
-    console.log(navLi);
     window.addEventListener('resize', function() {
       if(openCloseNav)setOpenCloseNav(false);
     });
