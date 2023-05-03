@@ -4,7 +4,7 @@ import { motion, useScroll } from "framer-motion"
 export default function About() {
   
     return (
-      <section>
+      <section id="about">
         <h2 className='text-primaryText md:text-[48px] text-[54px] font-semibold mb-3 text-center'>
           Ty prowadź swój biznes, <br className='sm:block hidden'/> {" "}
           My zajmiemy się stroną.

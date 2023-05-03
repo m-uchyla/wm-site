@@ -4,7 +4,7 @@ import Image from "next/image"
 
 export default function Hero() {
     return (
-      <section>
+      <section id="hero">
         <div className="flex justify-between items-center gap-10 pt-20">
           <div className="flex-1">
             <h1 className="text-[70px] font-bold leading-none">Pomożemy Ci być <span className="text-gradient">widocznym</span> w internecie</h1>
@@ -22,6 +22,7 @@ export default function Hero() {
           <Image 
             className="float-right"
             src={HeroImg}
+            alt="Komputer"
             quality={100}
             width={600}
           />

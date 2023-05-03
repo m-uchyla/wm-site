@@ -16,7 +16,7 @@ export default function Pricing() {
   }
 
     return (
-      <section>
+      <section id="pricing">
         <SectionHeader header={"Poznaj naszą ofertę"} subheader={"Potrzebujesz strony napisanej od zera? Wybierz coś dla siebie"} />
         <div className="flex lg:flex-row flex-col justify-between gap-7">
           {pricing.map((plan, index) => (

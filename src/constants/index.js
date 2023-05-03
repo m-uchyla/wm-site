@@ -13,13 +13,13 @@ export const navLinks = [
         title: "Oferta",
         href: "pricing"
     },
-    // {
-    //     id: "portfolio",
-    //     title: "Portfolio",
-    //     href: "portfolio"
-    // },
     {
-        id: "contact",
+        id: "portfolio",
+        title: "Portfolio",
+        href: "portfolio"
+    },
+    {
+        id: "testimonials",
         title: "Kontakt",
         href: "contact"
     }
