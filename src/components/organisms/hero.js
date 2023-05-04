@@ -1,10 +1,18 @@
-import { Button } from "../index"
+import { Button, BgLight } from "../index"
 import { HeroImg } from "../../assets/index"
 import Image from "next/image"
+import { useEffect } from "react";
 
 export default function Hero() {
+
+  function scrollToAbout(){
+    const element = document.getElementById('about');
+    if (element) element.scrollIntoView({ behavior: 'smooth' });
+  }
+  
     return (
       <section id="hero">
+        {/* <BgLight /> */}
         <div className="flex md:justify-between md:text-left text-center flex-col md:flex-row flex-wrap content-center items-center gap-10 md:pt-20 pt-16">
           <div className="flex-1">
             <h1 className="text-[38px] sm:text-[55px] xl:text-[70px] font-bold leading-none">Pomożemy Ci być <span className="text-gradient">widocznym</span> w internecie</h1>
@@ -13,7 +21,7 @@ export default function Hero() {
               <div className="md:w-[230px] w-[250px]">
                 <Button text={"Darmowa wycena"} variation={1} />
               </div>
-              <div className="md:w-[230px] w-[250px]">
+              <div  onClick={()=> scrollToAbout()} className="md:w-[230px] w-[250px]">
                 <Button text={"Więcej informacji"} variation={2} />
               </div>
             </div>

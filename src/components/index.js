@@ -3,6 +3,7 @@ import Input from "./atoms/input"
 import SectionHeader from "./atoms/sectionHeader"
 import MiniCard from "./atoms/miniCard"
 import TelInput from "./atoms/telInput"
+import BgLight from "./atoms/bgLight"
 
 import Card from "./atoms/card"
 import Form from "./molecules/form"
@@ -29,6 +30,7 @@ export {
     SectionHeader,
     MiniCard,
     TelInput,
+    BgLight,
     /*--- MOLECULES ---*/ 
     Card,
     Form,
