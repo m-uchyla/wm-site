@@ -20,7 +20,7 @@ export const navLinks = [
     },
     {
         id: "portfolio",
-        title: "Portfolio",
+        title: "Referencje",
         href: "portfolio"
     },
     {
