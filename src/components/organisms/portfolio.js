@@ -7,7 +7,7 @@ export default function Portfolio () {
     return (
     <section id="portfolio">
       <SectionHeader header={"Wybrane realizacje"} subheader={"Sprawdź jak wyglądają przygotowane przez nas strony"} />
-      <div className='flex flex-col sm:flex-row flex-wrap place-content-between gap-y-7'>
+      <div className='flex flex-col xl:flex-row flex-wrap xl:place-content-between place-content-center gap-y-7'>
       {portfolio.map((p, index) => (
         <motion.div 
         key={"portfolio"+index}
@@ -17,7 +17,7 @@ export default function Portfolio () {
         viewport={{ once: true, amount: 0.1 }}
         transition={{ delay: index === 0 ? 0.3 : index === 1 ? 0.5 : 0.7, duration: 1 }}
         >
-            <div className='w-[550px]'>
+            <div className='md:w-[550px] sm:w-[450px] w-[250px]'>
             <div className='portfolio-container  cursor-pointer'>
                 <a href={p.link} target='_blank' rel='nofollow'>
                 {/* <img src={p.img} alt={p.title} className='border-2 border-[#34333b] portfolio-image' /> */}

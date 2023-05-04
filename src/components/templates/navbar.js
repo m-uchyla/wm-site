@@ -73,7 +73,7 @@ export default function Navbar() {
         width={50}
         />
       </div>
-      <ul className="sm:flex hidden">
+      <ul className="md:flex hidden">
         {navLinks.map((link, index) => (
           <div key={"link"+index}>
           <li onClick={() => {smoothScroll(link.id);}} id="navLink" className={`${link.id} text-[18px] ${index === navLinks.length - 1 ? "mr-0" : "mr-4"} cursor-pointer hover:text-primary`}>{link.title}</li>
@@ -81,7 +81,7 @@ export default function Navbar() {
           </div>
         ))}
       </ul>
-      <div className={`sm:hidden flex flex-1 justify-end items-center z-50`}>
+      <div className={`md:hidden flex flex-1 justify-end items-center z-50`}>
         <div className={`${!openCloseNav ? 'menu_burger' : 'menu_burger open'}`}>
           <div className={` ${navbar ? "menu_burger-btn-fixed" : "menu_burger-btn"}  ${openCloseNav ? "fixed z-10" : "static z-10"}`} 
             onClick={() => {setOpenCloseNav((prev) => !prev);setInitNav(false)}} 
@@ -92,7 +92,7 @@ export default function Navbar() {
             <ul className='list-none flex-col justify-end items-center flex-1 mt-10'>
               {navLinks.map((link, index)=>(
                 <div key={link.id}>
-                  <li key={link.id} className={`text-[32px] font-normal cursor-pointer py-10`} onClick={()=>{}}>
+                  <li key={link.id} className={`text-[20px] font-normal cursor-pointer py-8`} onClick={()=>{}}>
                     <div onClick={() => {smoothScroll(link.id);setOpenCloseNav(false)}} >{link.title}</div>
                   </li>
                   {((index+1) == navLinks.length) ? "" : <div className='w-full h-[1px] bg-blue-gradient'/>}
