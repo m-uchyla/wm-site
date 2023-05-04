@@ -1,4 +1,4 @@
-import { About, Contact, Hero, Pricing, How, Portfolio, Testimonials, CookiesAlert } from '../index'
+import { About, Contact, Hero, Pricing, How, Portfolio, Testimonials, CookiesAlert, BgLight } from '../index'
 
 export default function Main() {
     return (
@@ -15,6 +15,9 @@ export default function Main() {
         <Testimonials />
         <Contact />
         
+        <BgLight top={"top-[-1rem]"} left={"left-[1rem]"}/>
+        <BgLight top={"top-[calc(120%-30rem)] opacity-60"} left={"left-[calc(20%+36rem)]"}/>
+        {/* <BgLight top={"top-[5rem]"}/> */}
         <CookiesAlert/>
       </>
     )

@@ -12,7 +12,6 @@ export default function Hero() {
   
     return (
       <section id="hero">
-        {/* <BgLight /> */}
         <div className="flex md:justify-between md:text-left text-center flex-col md:flex-row flex-wrap content-center items-center gap-10 md:pt-20 pt-16">
           <div className="flex-1">
             <h1 className="text-[38px] sm:text-[55px] xl:text-[70px] font-bold leading-none">Pomożemy Ci być <span className="text-gradient">widocznym</span> w internecie</h1>
