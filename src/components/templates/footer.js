@@ -1,4 +1,4 @@
-
+import Link from 'next/link'
 
 export default function Footer() {
     return (
@@ -10,8 +10,7 @@ export default function Footer() {
           </div>
           <p className="md:text-[16px] text-[20px]">Web-Masters nowoczesne strony internetowe dla biznesu</p>
           <ul className="flex gap-7">
-            <li>Cookies</li>
-            <li>Polityka prywatności</li>
+            <li className='hover:text-primaryText'><Link href="/polityka-prywatnosci">Polityka prywatności</Link></li>
           </ul>
         </div>
       </footer>

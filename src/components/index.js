@@ -7,6 +7,7 @@ import TelInput from "./atoms/telInput"
 import Card from "./atoms/card"
 import Form from "./molecules/form"
 import Popup from "./molecules/popup"
+import CookiesAlert from "./molecules/cookiesAlert"
 
 import About from "./organisms/about"
 import Contact from "./organisms/contact"
@@ -19,6 +20,7 @@ import Testimonials from "./organisms/testimonials"
 import Footer from "./templates/footer"
 import Navbar from "./templates/navbar"
 import Main from "./templates/main"
+import PrivacyPolicy from "./templates/privacyPolicy"
 
 export {
     /*--- ATOMS ---*/ 
@@ -31,6 +33,7 @@ export {
     Card,
     Form,
     Popup,
+    CookiesAlert,
     /*--- ORGANISMS ---*/ 
     About,
     Contact,
@@ -42,5 +45,6 @@ export {
     /*--- TEMPLATES ---*/ 
     Footer,
     Navbar,
-    Main
+    Main,
+    PrivacyPolicy
 }
