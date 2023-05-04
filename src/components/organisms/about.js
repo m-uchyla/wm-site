@@ -18,7 +18,7 @@ export default function About() {
               width={600}
             />
           </div>
-          <div className="flex-1 flex-center mt-8">
+          <div className="flex-1 flex-center sm:mt-8">
             {/* <div className="grid grid-cols-2 grid-rows-2 gap-5 items-stretch"> */}
             <div className="grid md:grid-cols-2 grid-cols-1 gap-10 items-stretch">
               {about.map((elem, index) => (

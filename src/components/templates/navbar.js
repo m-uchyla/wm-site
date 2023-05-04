@@ -66,7 +66,7 @@ export default function Navbar() {
 
   return (
     <nav className={`flex justify-between py-5 ${navbar ? "navbar-down" : "navbar-up"}`}>
-      <div>
+      <div className="flex-center">
         <Image 
         src={WMlogo}
         alt="Web-Masters logo"
