@@ -12,8 +12,8 @@ export default function Portfolio () {
         <motion.div 
         key={"portfolio"+index}
         className="flex-1"
-        initial={{ opacity: 0, x: -150 }}
-        whileInView={{ opacity: 1, x: 0, }}
+        initial={{ opacity: 0, y: 150 }}
+        whileInView={{ opacity: 1, y: 0, }}
         viewport={{ once: true, amount: 0.1 }}
         transition={{ delay: index === 0 ? 0.3 : index === 1 ? 0.5 : 0.7, duration: 1 }}
         >
