@@ -77,6 +77,7 @@ export const howItsDone = [
 
 export const pricing = [
     {
+        id:"basic",
         title: "Basic Plan",
         desc: "Strona-wizytówka w najlepszej proporcji jakości do ceny",
         price: 1299,
@@ -106,6 +107,7 @@ export const pricing = [
         ]
     }, 
     {
+        id:"standard",
         title: "Standard Plan",
         desc: "Propozycja dla małych biznesów, które potrzebują większej ilości treści na stronie",
         price: 1899,
@@ -138,6 +140,7 @@ export const pricing = [
         ]
     }, 
     {
+        id:"premium",
         title: "Premium Plan",
         desc: "Okazała strona dla małych i średnich biznesów oraz długoterminowe wsparcie",
         price: 2499,

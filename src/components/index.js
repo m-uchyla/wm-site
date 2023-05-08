@@ -23,6 +23,7 @@ import Footer from "./templates/footer"
 import Navbar from "./templates/navbar"
 import Main from "./templates/main"
 import PrivacyPolicy from "./templates/privacyPolicy"
+import OfferSelection from "./templates/offerSelection"
 
 export {
     /*--- ATOMS ---*/ 
@@ -50,5 +51,6 @@ export {
     Footer,
     Navbar,
     Main,
-    PrivacyPolicy
+    PrivacyPolicy,
+    OfferSelection
 }

@@ -2,6 +2,7 @@ import { pricing } from "@/constants"
 import { Card, Button, SectionHeader, MiniCard } from "../index"
 import { GoCheck } from "react-icons/go";
 import { motion } from "framer-motion"
+import Link from 'next/link'
 
 export default function Pricing() {
 
@@ -38,9 +39,11 @@ export default function Pricing() {
                   <h5 className='xl:text-[30px] text-[25px] font-semibold'><span className="text-secondaryText font-normal xl:text-[20px] text-[16px]">od</span> <span className='text-cyan-500 line-through '><span className='text-zinc-500'>{plan.price}</span></span> {Math.floor(plan.price * (1-(plan.discount/100)))} zł <span className="text-secondaryText font-normal text-[20px]">netto</span></h5>
                 }
               </div>
-              <div className="mb-5">
-                <Button text="Wybierz" variation={1} />
-              </div>
+              <Link href={'/plan/'+plan.id}>
+                <div className="mb-5">
+                  <Button text="Wybierz" variation={1} />
+                </div>
+              </Link>
               <div>
                 <h6>Plan zawiera:</h6>
                 <ul>
