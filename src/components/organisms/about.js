@@ -27,7 +27,7 @@ export default function About() {
                   initial={{ opacity: 0, x: -150 }}
                   whileInView={{ opacity: 1, x: 0, }}
                   viewport={{ once: true, amount: 0.1 }}
-                  transition={{ delay: index === 0 ? 0.3 : index === 1 ? 0.5 : 0.7, duration: 1 }}
+                  transition={{ delay: index === 0 ? 0.3 : index === 1 ? 0.5 : index === 2 ? 0.7 : 0.9, duration: 1 }}
                 >
                   <Card className={"flex flex-col items-center md:h-[290px]"}>
                   <div className="bg-blue-gradient w-[60px] h-[60px] rounded-full flex justify-center items-center">
