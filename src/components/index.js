@@ -9,6 +9,7 @@ import Card from "./atoms/card"
 import Form from "./molecules/form"
 import Popup from "./molecules/popup"
 import CookiesAlert from "./molecules/cookiesAlert"
+import Alert from "./molecules/alert"
 
 import About from "./organisms/about"
 import Contact from "./organisms/contact"
@@ -36,6 +37,7 @@ export {
     Form,
     Popup,
     CookiesAlert,
+    Alert,
     /*--- ORGANISMS ---*/ 
     About,
     Contact,
