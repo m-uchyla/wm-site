@@ -9,6 +9,11 @@ export default function Hero() {
     const element = document.getElementById('about');
     if (element) element.scrollIntoView({ behavior: 'smooth' });
   }
+
+  function scrollToContact(){
+    const element = document.getElementById('testimonials');
+    if (element) element.scrollIntoView({ behavior: 'smooth' });
+  }
   
     return (
       <section id="hero">
@@ -17,7 +22,7 @@ export default function Hero() {
             <h1 className="text-[38px] sm:text-[55px] xl:text-[70px] font-bold leading-none">Pomożemy Ci być <span className="text-gradient">widocznym</span> w internecie</h1>
             <h2 className="text-secondaryText text-[15px] sm:text-[20px] my-5">Web-Masters zapewni twojej firmie profesjonalną stronę internetową wykonaną z użyciem najnowszych technologii.</h2>
             <div className="flex gap-4 flex-col md:flex-row items-center md:items-baseline">
-              <div className="md:w-[230px] w-[250px]">
+              <div onClick={()=> scrollToContact()} className="md:w-[230px] w-[250px]">
                 <Button text={"Darmowa wycena"} variation={1} />
               </div>
               <div  onClick={()=> scrollToAbout()} className="md:w-[230px] w-[250px]">

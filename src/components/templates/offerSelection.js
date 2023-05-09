@@ -1,14 +1,16 @@
 import { useState, useEffect } from "react";
 import { WMlogo } from "@/assets";
 import Link from 'next/link'
-import {Card} from '@/components'
+import { Card, Form, Button } from '@/components'
 import Image from 'next/image'
 import { pricing } from "@/constants"
 import { GoCheck } from "react-icons/go";
+import ReactCardFlip from 'react-card-flip';
 
 export default function OfferSelection({plan}) {
     
   const [navbar, setNavbar] = useState(false);
+  const [isSent, setSent] = useState(false);
 
   const changeBackground = () => {
       if(window.scrollY >= 5) {
@@ -19,8 +21,6 @@ export default function OfferSelection({plan}) {
     }
 
     useEffect(() => {
-      console.log(plan);
-      console.log(plan);
       window.addEventListener('scroll', changeBackground);
     },[])
 
@@ -43,10 +43,21 @@ export default function OfferSelection({plan}) {
       </section>
       <div className="bg-[rgba(255,255,255,0.15)] h-[1px] sm:mx-[20%] mx-6" />
       <section>
-        <div className="flex gap-5">
-          <Card className=" flex-1">
-
-          </Card>
+        <div className="flex flex-col-reverse md:flex-row gap-5">
+          <ReactCardFlip isFlipped={isSent} flipDirection="horizontal" containerClassName="flex-1">
+            <Card className="flex-1 h-full">
+              <Form plan={(plan) ? plan.title : "" } sentInfo={setSent}/>
+            </Card>
+            <Card className="flex-1 h-full flex-center flex-col text-center">
+              <h4 className="sm:text-[40px] text-[30px] font-semibold text-gradient">Wiadomość wysłana!</h4>
+              <p className="text-secondaryText sm:text-[16px] text-[12px]">Postaramy się skontatkować z Tobą <br /> tak szybko jak będzie to możliwe</p>
+              <div className="sm:w-[50%] lg:w-[80%] xl:w-[50%] w-full mt-4">
+                <Link href={"/"}>
+                  <Button variation={1} text={"Strona główna"} />
+                </Link>
+              </div>
+            </Card>
+          </ReactCardFlip>
           <div className="flex-1 flex gap-5 flex-col">
           {plan ? 
           <Card className={"h-full flex flex-col gap-2"}>
