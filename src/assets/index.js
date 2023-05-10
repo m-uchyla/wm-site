@@ -9,6 +9,7 @@ import trainer from './portfolio/trainer.png'
 import pizza from './portfolio/pizza.png'
 import testimonial01 from "./testimonials/testimonial01.jpg"
 import aboutImg from "./about.png"
+import line from "./arrows/line.svg"
 
 export {
     favicon,
@@ -21,5 +22,6 @@ export {
     trainer,
     pizza,
     testimonial01,
-    aboutImg
+    aboutImg, 
+    line
 }
