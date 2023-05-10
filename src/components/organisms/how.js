@@ -6,14 +6,14 @@ import Image from 'next/image'
 export default function How () {
     const { scrollYProgress } = useScroll();
 
-    const translate1 = useTransform(scrollYProgress, [0.28, 0.32], [-100, 0])
-    const translate2 = useTransform(scrollYProgress, [0.26, 0.37], [120, 0])
-    const translate3 = useTransform(scrollYProgress, [0.26, 0.45], [-100, 0])
-    const translate4 = useTransform(scrollYProgress, [0.26, 0.55], [120, 0])
+    const translate1 = useTransform(scrollYProgress, [0.26, 0.35], [-120, 0])
+    const translate2 = useTransform(scrollYProgress, [0.26, 0.42], [120, 0])
+    const translate3 = useTransform(scrollYProgress, [0.26, 0.50], [-120, 0])
+    const translate4 = useTransform(scrollYProgress, [0.26, 0.54], [120, 0])
     const opacity1 = useTransform(scrollYProgress, [0.27, 0.35], [0, 1])
-    const opacity2 = useTransform(scrollYProgress, [0.33, 0.42], [0, 1])
-    const opacity3 = useTransform(scrollYProgress, [0.42, 0.5], [0, 1])
-    const opacity4 = useTransform(scrollYProgress, [0.50, 0.55], [0, 1])
+    const opacity2 = useTransform(scrollYProgress, [0.35, 0.42], [0, 1])
+    const opacity3 = useTransform(scrollYProgress, [0.42, 0.46], [0, 1])
+    const opacity4 = useTransform(scrollYProgress, [0.45, 0.55], [0, 1])
     const yRange = useTransform(scrollYProgress, [0.26, 0.57], [0, 1]);
     const pathLength = useSpring(yRange, { stiffness: 400, damping: 90 });
 
@@ -53,7 +53,7 @@ export default function How () {
                 </motion.div>
                 <motion.div 
                 style={{
-                    translateX: index % 2 ? translate1 : translate2,
+                    translateX: index === 0 ? translate2 : index === 1 ? translate1 : index === 2 ? translate4 : translate3,
                     opacity: index === 0 ? opacity1 : index === 1 ? opacity2 : index === 2 ? opacity3 : opacity4
                 }}>
                     <Image src={how.img} alt={how.title}/>
