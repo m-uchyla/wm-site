@@ -6,8 +6,14 @@ import Image from 'next/image'
 export default function How () {
     const { scrollYProgress } = useScroll();
 
-    const translateX = useTransform(scrollYProgress, [0, 0.35], [-120, 0])
-    const translateY = useTransform(scrollYProgress, [0.26, 0.47], [120, 0])
+    const translate1 = useTransform(scrollYProgress, [0.28, 0.32], [-100, 0])
+    const translate2 = useTransform(scrollYProgress, [0.26, 0.37], [120, 0])
+    const translate3 = useTransform(scrollYProgress, [0.26, 0.45], [-100, 0])
+    const translate4 = useTransform(scrollYProgress, [0.26, 0.55], [120, 0])
+    const opacity1 = useTransform(scrollYProgress, [0.27, 0.35], [0, 1])
+    const opacity2 = useTransform(scrollYProgress, [0.33, 0.42], [0, 1])
+    const opacity3 = useTransform(scrollYProgress, [0.42, 0.5], [0, 1])
+    const opacity4 = useTransform(scrollYProgress, [0.50, 0.55], [0, 1])
     const yRange = useTransform(scrollYProgress, [0.26, 0.57], [0, 1]);
     const pathLength = useSpring(yRange, { stiffness: 400, damping: 90 });
 
@@ -31,18 +37,28 @@ export default function How () {
         </motion.svg>
         <div className='flex flex-col'>
             {howItsDone.map((how, index) => (
+                <div className={`flex items-center justify-between ${index % 2 ? "flex-row-reverse" : "flex-row"} ${index === howItsDone.length - 1 ? "mb-0" : "mb-10"}`}>
                 <motion.div 
-                    style= {{translateX}}
+                    style={{
+                        translateX: index === 0 ? translate1 : index === 1 ? translate2 : index === 2 ? translate3 : translate4,
+                        opacity: index === 0 ? opacity1 : index === 1 ? opacity2 : index === 2 ? opacity3 : opacity4
+                    }}
                     key={"howItsDone" + index}
-                    className={`flex items-center justify-between ${index % 2 ? "flex-row-reverse" : "flex-row"} ${index === howItsDone.length - 1 ? "mb-0" : "mb-10"}`}
                 >
                     <div className='max-w-[510px]'>
                         <h4 className='text-[36px] font-bold'>{how.title}</h4>
                         <div className={`w-[566px] ${index % 2 ? "ml-[-63px]" : "ml-0"} h-[5px] bg-[#00D8FF]`}/>
                         <p className='text-[18px] text-secondaryText'>{how.description}</p>
                     </div>
+                </motion.div>
+                <motion.div 
+                style={{
+                    translateX: index % 2 ? translate1 : translate2,
+                    opacity: index === 0 ? opacity1 : index === 1 ? opacity2 : index === 2 ? opacity3 : opacity4
+                }}>
                     <Image src={how.img} alt={how.title}/>
                 </motion.div>
+                </div>
             ))}
         </div>
     </section>
