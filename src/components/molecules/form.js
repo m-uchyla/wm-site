@@ -6,7 +6,6 @@ export default function Form({plan, sentInfo}) {
 
   const formId = "offerSelectionForm"
   const contactForm = useRef();
-  const { setSent } = sentInfo;
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -49,6 +48,7 @@ export default function Form({plan, sentInfo}) {
                     name={"name"}
                     isRequired={false}
                     formId={formId}
+                    className={"mt-1"}
             />
           </div>
           <div>
@@ -61,6 +61,7 @@ export default function Form({plan, sentInfo}) {
                     name={"email"}
                     isRequired={true}
                     formId={formId}
+                    className={"mt-1"}
             />
           </div>
           <div>
@@ -71,6 +72,7 @@ export default function Form({plan, sentInfo}) {
                     placeholderName={"Podaj swój numer telefonu"}
                     name={"tel"}
                     formId={formId}
+                    className={"mt-1"}
             />
           </div>
           <div>
@@ -82,6 +84,7 @@ export default function Form({plan, sentInfo}) {
                     name={"message"}
                     isRequired={false}
                     formId={formId}
+                    className={"mt-1"}
             />
           </div>
           <div className="w-[50%] mx-auto">

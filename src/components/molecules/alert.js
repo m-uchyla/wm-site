@@ -1,5 +1,5 @@
 import { Card } from "@/components"
-import { ImCross, ImCheckmark, ImWarning } from "react-icons/im"
+import { ImCheckmark, ImWarning } from "react-icons/im"
 
 export default function Alert({type, header, subheader, className, id}) {
     return (

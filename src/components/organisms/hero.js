@@ -1,7 +1,6 @@
-import { Button, BgLight } from "../index"
+import { Button } from "../index"
 import { HeroImg } from "../../assets/index"
 import Image from "next/image"
-import { useEffect } from "react";
 
 export default function Hero() {
 
@@ -36,6 +35,7 @@ export default function Hero() {
             src={HeroImg}
             alt="Komputer"
             quality={100}
+            priority={true}
             width={600}
           />
           </div>

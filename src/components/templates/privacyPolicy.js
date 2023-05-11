@@ -1,4 +1,4 @@
-import { Card, Button } from '../index'
+import { Card } from '../index'
 import { privacyPolicyText } from '@/constants/privacyPolicyText'
 import { WMlogo } from "../../assets"
 import Image from "next/image"

@@ -1,5 +1,5 @@
 import { pricing } from "@/constants"
-import { Card, Button, SectionHeader, MiniCard } from "../index"
+import { Card, Button, SectionHeader } from "../index"
 import { GoCheck } from "react-icons/go";
 import { motion } from "framer-motion"
 import Link from 'next/link'

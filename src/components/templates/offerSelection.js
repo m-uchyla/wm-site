@@ -3,7 +3,6 @@ import { WMlogo } from "@/assets";
 import Link from 'next/link'
 import { Card, Form, Button } from '@/components'
 import Image from 'next/image'
-import { pricing } from "@/constants"
 import { GoCheck } from "react-icons/go";
 import ReactCardFlip from 'react-card-flip';
 
@@ -93,30 +92,4 @@ export default function OfferSelection({plan}) {
       
     </>
   )
-}
-
-export async function getStaticProps({selectedPlan}) {
-  console.log("1")
-  // Call an external API endpoint to get posts
-  // const res = await fetch('https://.../posts');
-  // const posts = await res.json();
-  console.log(selectedPlan)
-  // // By returning { props: { posts } }, the Blog component
-  // // will receive `posts` as a prop at build time
-  // return {
-  //   props: {
-  //     posts,
-  //   },
-  // };
-}
-
-export async function getServerSideProps({selectedPlan}) {
-  console.log("2")
-  console.log(selectedPlan)
-  // // Fetch data from external API
-  // const res = await fetch(`https://.../data`);
-  // const data = await res.json();
- 
-  // // Pass data to the page via props
-  // return { props: { data } };
 }

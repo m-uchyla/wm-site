@@ -28,7 +28,7 @@ export default function How () {
             strokeDasharray="0 1"
             fill="none"
             stroke="#00D8FF"
-            stroke-width="5"
+            strokeWidth="5"
             d="M3 0V1356"
             style={{
                 pathLength
@@ -37,27 +37,27 @@ export default function How () {
         </motion.svg>
         <div className='flex flex-col'>
             {howItsDone.map((how, index) => (
-                <div className={`flex items-center justify-between ${index % 2 ? "flex-row-reverse" : "flex-row"} ${index === howItsDone.length - 1 ? "mb-0" : "mb-10"}`}>
-                <motion.div 
+                <div key={"howItsDone"+index} className={`flex items-center justify-between ${index % 2 ? "flex-row-reverse" : "flex-row"} ${index === howItsDone.length - 1 ? "mb-0" : "mb-10"}`}>
+                    <motion.div 
+                        style={{
+                            translateX: index === 0 ? translate1 : index === 1 ? translate2 : index === 2 ? translate3 : translate4,
+                            opacity: index === 0 ? opacity1 : index === 1 ? opacity2 : index === 2 ? opacity3 : opacity4
+                        }}
+                        key={"howItsDone" + index}
+                    >
+                        <div className='max-w-[510px]'>
+                            <h4 className='text-[36px] font-bold'>{how.title}</h4>
+                            <div className={`w-[566px] mb-2 ${index % 2 ? "ml-[-63px]" : "ml-0"} h-[5px] bg-[#00D8FF]`}/>
+                            <p className='text-[18px] text-secondaryText'>{how.description}</p>
+                        </div>
+                    </motion.div>
+                    <motion.div 
                     style={{
-                        translateX: index === 0 ? translate1 : index === 1 ? translate2 : index === 2 ? translate3 : translate4,
+                        translateX: index === 0 ? translate2 : index === 1 ? translate1 : index === 2 ? translate4 : translate3,
                         opacity: index === 0 ? opacity1 : index === 1 ? opacity2 : index === 2 ? opacity3 : opacity4
-                    }}
-                    key={"howItsDone" + index}
-                >
-                    <div className='max-w-[510px]'>
-                        <h4 className='text-[36px] font-bold'>{how.title}</h4>
-                        <div className={`w-[566px] mb-2 ${index % 2 ? "ml-[-63px]" : "ml-0"} h-[5px] bg-[#00D8FF]`}/>
-                        <p className='text-[18px] text-secondaryText'>{how.description}</p>
-                    </div>
-                </motion.div>
-                <motion.div 
-                style={{
-                    translateX: index === 0 ? translate2 : index === 1 ? translate1 : index === 2 ? translate4 : translate3,
-                    opacity: index === 0 ? opacity1 : index === 1 ? opacity2 : index === 2 ? opacity3 : opacity4
-                }}>
-                    <Image src={how.img} alt={how.title}/>
-                </motion.div>
+                    }}>
+                        <Image src={how.img} quality={100} alt={how.title}/>
+                    </motion.div>
                 </div>
             ))}
         </div>

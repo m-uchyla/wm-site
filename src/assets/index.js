@@ -1,4 +1,4 @@
-import favicon from "./logoImgs/favicon.png"
+import favicon from "./logoImgs/favicon.webp"
 import WMlogo from "./logoImgs/WMlogo.png"
 import HeroImg from "./hero.png"
 import done from "./isometric/done.png"
@@ -23,5 +23,5 @@ export {
     pizza,
     testimonial01,
     aboutImg, 
-    line
+    line,
 }

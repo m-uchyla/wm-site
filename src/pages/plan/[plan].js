@@ -1,8 +1,8 @@
-import { Navbar, Main, Footer } from "@/components"
+import { Footer } from "@/components"
 import { useRouter } from "next/router"
 import { OfferSelection } from "@/components"
-import { useState, useEffect } from "react";
 import { pricing } from "@/constants"
+import Head from 'next/head'
 
 export default function Home() {
 
@@ -13,6 +13,11 @@ export default function Home() {
 
   return (
     <>
+      <Head>
+        <title>Wybór oferty | Web-Masters.pl</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content="nofollow" />
+      </Head>
       <OfferSelection plan={plan}/>
       <Footer />
     </>
