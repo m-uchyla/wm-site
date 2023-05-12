@@ -1,0 +1,10 @@
+export const translate1 = useTransform(scrollYProgress, [0.27, 0.30], [-120, 0])
+export const translate2 = useTransform(scrollYProgress, [0.30, 0.38], [120, 0])
+export const translate3 = useTransform(scrollYProgress, [0.23, 0.47], [-120, 0])
+export const translate4 = useTransform(scrollYProgress, [0.23, 0.54], [120, 0])
+export const opacity1 = useTransform(scrollYProgress, [0.28, 0.30], [0, 1])
+export const opacity2 = useTransform(scrollYProgress, [0.32, 0.38], [0, 1])
+export const opacity3 = useTransform(scrollYProgress, [0.38, 0.42], [0, 1])
+export const opacity4 = useTransform(scrollYProgress, [0.44, 0.46], [0, 1])
+export const yRange = useTransform(scrollYProgress, [0.26, 0.57], [0, 1]);
+export const pathLength = useSpring(yRange, { stiffness: 400, damping: 90 });
