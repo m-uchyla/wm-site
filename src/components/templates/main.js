@@ -12,7 +12,7 @@ export default function Main() {
         <Pricing />
         <div className="bg-[rgba(255,255,255,0.15)] h-[1px] sm:mx-[20%] mx-6" />
         <Portfolio />
-        <Testimonials />
+        {/* <Testimonials /> */}
         <Contact />
         
         <BgLight top={"top-[-1rem]"} left={"left-[1rem]"}/>

@@ -43,7 +43,11 @@ export default function Navbar() {
 
       navLi.forEach((li,index) => {
         if (li.classList.contains(current)) {
-          setNavActive(current);
+          if ((window.innerHeight + Math.round(window.scrollY)) >= document.body.offsetHeight) {
+            setNavActive("contact");
+          }else{
+            setNavActive(current);
+          }
         }
         if(current === "hero")setNavActive(null);
       });

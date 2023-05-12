@@ -8,6 +8,7 @@ import working from "./isometric/working.png"
 import trainer from './portfolio/trainer.png'
 import pizza from './portfolio/pizza.png'
 import testimonial01 from "./testimonials/testimonial01.jpg"
+import testimonial_vladyslaw from "./testimonials/testimonial_vladyslaw.png"
 import aboutImg from "./about.png"
 import line from "./arrows/line.svg"
 
@@ -24,4 +25,5 @@ export {
     testimonial01,
     aboutImg, 
     line,
+    testimonial_vladyslaw
 }

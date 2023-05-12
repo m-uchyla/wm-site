@@ -10,7 +10,7 @@ export default function Hero() {
   }
 
   function scrollToContact(){
-    const element = document.getElementById('testimonials');
+    const element = document.getElementById('contact');
     if (element) element.scrollIntoView({ behavior: 'smooth' });
   }
   

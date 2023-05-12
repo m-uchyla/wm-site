@@ -1,6 +1,6 @@
 import {GiPencilRuler, GiPodiumWinner} from "react-icons/gi";
 import { FaWrench, FaBolt, FaPencilRuler, FaChartLine } from "react-icons/fa";
-import { done, idea, preview, working, pizza, trainer, testimonial01 } from "../assets/index"
+import { done, idea, preview, working, pizza, trainer, testimonial01, testimonial_vladyslaw } from "../assets/index"
 
 export const navLinks = [
     {
@@ -24,7 +24,7 @@ export const navLinks = [
         href: "portfolio"
     },
     {
-        id: "testimonials",
+        id: "contact",
         title: "Kontakt",
         href: "contact"
     }
@@ -219,10 +219,10 @@ export const testimonials = [
         img:testimonial01
     },
     {
-        name:"Adam",
-        job: "Consultant",
-        desc:"This is a great app and the value is amazing. Since I purchased it I have been using it everyday! Highly recommend it. ",
-        img:testimonial01
+        name:"Vladyslaw",
+        job: "Software Developer",
+        desc:"Zespół Web-Masters.pl znakomicie wywiązuje się ze swoich zadań. Współpraca z nimi była przyjemnością.",
+        img:testimonial_vladyslaw
     },
     {
         name:"Dawid",
