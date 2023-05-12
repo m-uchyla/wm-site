@@ -2,40 +2,39 @@ import React, { useEffect, useState } from 'react'
 import { motion, useTransform, useSpring, useScroll } from "framer-motion"
 import {howItsDone} from "../../constants/index"
 import Image from 'next/image'
-import { largeDeviceAnimation } from '../../constants/largeDeviceAnimation'
+import { large, small } from '../../constants/deviceAnimation'
 
 export default function How () {
     const { scrollYProgress } = useScroll();
 
-console.log(largeDeviceAnimation)
-    const translate1 = useTransform(scrollYProgress, [0.30, 0.38], [120, 0])
-    const translate2 = useTransform(scrollYProgress, [0.30, 0.38], [120, 0])
-    const translate3 = useTransform(scrollYProgress, [0.32, 0.42], [-120, 0])
-    const translate4 = useTransform(scrollYProgress, [0.37, 0.47], [120, 0])
-    const opacity1 = useTransform(scrollYProgress, [0.28, 0.30], [0, 1])
-    const opacity2 = useTransform(scrollYProgress, [0.35, 0.38], [0, 1])
-    const opacity3 = useTransform(scrollYProgress, [0.40, 0.45], [0, 1])
-    const opacity4 = useTransform(scrollYProgress, [0.43, 0.48], [0, 1])
-    const yRange = useTransform(scrollYProgress, [0.26, 0.57], [0, 1]);
-    const pathLength = useSpring(yRange, { stiffness: 400, damping: 90 });
-
 //screen width 1440 and above -> false; below 1440 -> true
-const [small,setSmall] = useState((typeof window !== 'undefined') ? ((window.innerWidth >= 1440) ? false : true) : true);
+const [deviceAnimation,setDeviceAnimation] = useState((typeof window !== 'undefined') ? ((window.innerWidth >= 1440) ? large : small) : small);
 
 useEffect(() => {
-    //setSmall((window.innerWidth >= 1440) ? false : true);
     window.addEventListener('resize', function() {
       if(window.innerWidth >= 1440){
-        setSmall(false)
+        setDeviceAnimation(large)
       }else{
-        setSmall(true)
+        setDeviceAnimation(small)
       };
     });
-  },[small])
+  },[deviceAnimation])
+
+    const translate1 = useTransform(scrollYProgress, deviceAnimation.translate1[0], deviceAnimation.translate1[1])
+    const translate2 = useTransform(scrollYProgress, deviceAnimation.translate2[0], deviceAnimation.translate2[1])
+    const translate3 = useTransform(scrollYProgress, deviceAnimation.translate3[0], deviceAnimation.translate3[1])
+    const translate4 = useTransform(scrollYProgress, deviceAnimation.translate4[0], deviceAnimation.translate4[1])
+    const opacity1 = useTransform(scrollYProgress, deviceAnimation.opacity1[0], deviceAnimation.opacity1[1])
+    const opacity2 = useTransform(scrollYProgress, deviceAnimation.opacity2[0], deviceAnimation.opacity2[1])
+    const opacity3 = useTransform(scrollYProgress, deviceAnimation.opacity3[0], deviceAnimation.opacity3[1])
+    const opacity4 = useTransform(scrollYProgress, deviceAnimation.opacity4[0], deviceAnimation.opacity4[1])
+    const yRange = useTransform(scrollYProgress, deviceAnimation.yRange[0], deviceAnimation.yRange[1]);
+    const pathLength = useSpring(yRange, { stiffness: 400, damping: 90 });
+
 
   return (
     <section id="howItsDone" >
-        <h2 className='text-white sm:text-[52px] text-[48px] font-semibold text-center'>Jak działamy?</h2>
+        <h2 className='text-white sm:text-[52px] text-[48px] font-semibold text-center mb-4 lg:mb-0'>Jak działamy?</h2>
         <motion.svg
         className={`absolute lg:right-[50%] md:right-[80%] ss:right-[70%] right-[95%] xl:z-[1] z-[-1]`}
         width="6" height="1356" viewBox="0 0 6 1356"
