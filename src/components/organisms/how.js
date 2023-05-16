@@ -9,7 +9,7 @@ export default function How () {
 
 //screen width 1440 and above -> false; below 1440 -> true
 const [deviceAnimation,setDeviceAnimation] = useState((typeof window !== 'undefined') ? ((window.innerWidth >= 1440) ? large : small) : small);
-const [translateState, setTranslateState] = useState(false);
+const [translateState, setTranslateState] = useState();
 
 
 useEffect(() => {
