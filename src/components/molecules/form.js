@@ -1,6 +1,7 @@
 import { Input, TelInput, Textarea, Button } from "@/components"
 import emailjs from '@emailjs/browser';
 import { useRef } from "react";
+import ReactGA from 'react-ga4';
 
 export default function Form({plan, sentInfo}) {
 
@@ -18,9 +19,7 @@ export default function Form({plan, sentInfo}) {
     const errors = document.querySelector(`[id^="${formId}_error"]`);
     
     if(errors || isEmpty){
-      console.log("error")
     }else{
-      console.log('success')
       ReactGA.event({
         category:"Offer selected", 
         action: "Offer selected"

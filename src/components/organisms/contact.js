@@ -6,6 +6,7 @@ import ReactGA from 'react-ga4';
 export default function Contact() {
 
   const contactForm = useRef();
+  ReactGA.initialize("G-0R0SY0R690");
 
   const [emailAlert,setEmailAlert] = useState({
     type: null,
