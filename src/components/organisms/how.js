@@ -54,7 +54,7 @@ useEffect(() => {
             }}
             />
         </motion.svg>
-        <div className='flex flex-col'>
+        <div className='flex flex-col gap-10 mt-10 lg:gap-0 lg:mt-0'>
        
             {howItsDone.map((how, index) => (
                 <div key={"howItsDone"+index} className={`flex items-center lg:justify-between justify-center ${index % 2 ? "flex-row-reverse" : "flex-row"} ${index === howItsDone.length - 1 ? "mb-0" : "mb-10"}`}>

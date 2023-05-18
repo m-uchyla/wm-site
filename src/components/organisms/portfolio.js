@@ -26,7 +26,7 @@ export default function Portfolio () {
                     alt={p.title}
                 />
                 <div
-                className='portfolio-desc p-4 bg-card rounded-xl'>
+                className='portfolio-desc p-4 bg-card rounded-xl md:block hidden'>
                     <h3 className='text-[28px] font-semibold'>{p.title}</h3>
                     <p className='my-2 text-secondaryText'>{p.desc}</p>
                     <p className='mb-2 text-primary font-semibold'>Zobacz więcej</p>
