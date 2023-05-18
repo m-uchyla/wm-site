@@ -32,12 +32,12 @@ export default function Contact() {
       initAlert("error", "Wystąpił błąd", "Spróbuj ponownie");
     }else{
       initAlert("success", "Wiadomość wysłana!", "Wkrótce się odezwiemy");
-      // ReactGA.event({
-      //   category:"Email", 
-      //   action: "Contact form email"
-      // });
+      ReactGA.event({
+        category:"Email", 
+        action: "Contact form email"
+      });
 
-      // emailjs.sendForm('service_contactForm_WM', 'template_wm_2', contactForm.current, 'LbjIHyDLBTMjgCzYg');
+      emailjs.sendForm('service_contactForm_WM', 'template_wm_2', contactForm.current, 'LbjIHyDLBTMjgCzYg');
     }
     
     

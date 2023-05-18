@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { motion, useTransform, useSpring, useScroll, useMotionTemplate } from "framer-motion"
 import {howItsDone} from "../../constants/index"
-import Image from 'next/image'
 import { large, small } from '../../constants/deviceAnimation'
 
 export default function How () {
@@ -91,7 +90,7 @@ useEffect(() => {
                         translateX: index === 0 ? translate2 : index === 1 ? translate1 : index === 2 ? translate4 : translate3,
                         opacity: index === 0 ? opacity1 : index === 1 ? opacity2 : index === 2 ? opacity3 : opacity4
                     }}>
-                        <Image src={how.img} quality={100} alt={how.title} className="lg:block hidden"/>
+                        <img src={how.img} alt={how.title} className="lg:block hidden"/>
                     </motion.div>
                 </div>
             ))}

@@ -1,6 +1,5 @@
 import { portfolio } from '../../constants'
 import { SectionHeader } from "@/components"
-import Image from 'next/image'
 import { motion } from "framer-motion"
 
 export default function Portfolio () {
@@ -21,10 +20,9 @@ export default function Portfolio () {
             <div className='portfolio-container  cursor-pointer'>
                 <a href={p.link} target='_blank' rel='nofollow'>
                 {/* <img src={p.img} alt={p.title} className='border-2 border-[#34333b] portfolio-image' /> */}
-                <Image 
+                <img 
                     className="rounded-xl portfolio-image"
                     src={p.img}
-                    quality={100}
                     alt={p.title}
                 />
                 <div

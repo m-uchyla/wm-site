@@ -21,12 +21,12 @@ export default function Form({plan, sentInfo}) {
       console.log("error")
     }else{
       console.log('success')
-      // ReactGA.event({
-      //   category:"Offer selected", 
-      //   action: "Offer selected"
-      // });
+      ReactGA.event({
+        category:"Offer selected", 
+        action: "Offer selected"
+      });
 
-      // emailjs.sendForm('service_contactForm_WM', 'template_wm', contactForm.current, 'LbjIHyDLBTMjgCzYg');
+      emailjs.sendForm('service_contactForm_WM', 'template_wm', contactForm.current, 'LbjIHyDLBTMjgCzYg');
       sentInfo(true);
     }
     

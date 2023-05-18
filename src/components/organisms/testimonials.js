@@ -1,6 +1,5 @@
 import { SectionHeader } from "@/components"
 import { testimonials } from "@/constants";
-import Image from 'next/image'
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css";
 import { useState, useEffect } from 'react';
@@ -60,12 +59,10 @@ export default function Testimonials(){
             <div ref={sliderRef} className="keen-slider">
             {testimonials.map((testimonial, index) => (
                 <div key={"testimonial"+index} className="flex-center keen-slider__slide flex-col text-center">
-                    <Image 
-                        className="rounded-full"
+                    <img 
+                        className="rounded-full w-[56]"
                         alt={testimonial.name}
                         src={testimonial.img}
-                        width={56}
-                        quality={75}
                     />
                     <p className="my-3 italic">{testimonial.desc}</p>
                     <h4 className="font-semibold">{testimonial.name} <span className="text-primary">- {testimonial.job}</span></h4>

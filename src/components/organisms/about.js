@@ -1,7 +1,6 @@
 import { about } from "@/constants";
 import { SectionHeader, Card } from "@/components"
 import { motion, useScroll } from "framer-motion"
-import Image from "next/image"
 import { aboutImg } from "@/assets"
 
 export default function About() {
@@ -11,11 +10,10 @@ export default function About() {
         <SectionHeader header={"Parę słów o nas"} subheader={"Zobacz co nas wyróżnia"} />
         <div className="flex flex-col xl:flex-row gap-16">
           <div className="flex-1 md:block hidden mx-auto">
-            <Image 
-              src={aboutImg}
+            <img 
+              src={'/assets/about.png'}
               alt="Edytor kodu"
-              quality={100}
-              width={600}
+              className="w-[600px]"
             />
           </div>
           <div className="flex-1 flex-center sm:mt-8">

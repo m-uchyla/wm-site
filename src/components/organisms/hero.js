@@ -1,6 +1,5 @@
 import { Button } from "../index"
 import { HeroImg } from "../../assets/index"
-import Image from "next/image"
 
 export default function Hero() {
 
@@ -30,13 +29,10 @@ export default function Hero() {
             </div>
           </div>
           <div className="flex-1 max-w-[60vw] sm:max-w-[40vw] md:max-w-[50vw] block sm:hidden lg:block">
-          <Image 
-            className="float-right"
-            src={HeroImg}
+          <img 
+            className="float-right w-[600px]"
+            src={'/assets/hero.png'}
             alt="Komputer"
-            quality={100}
-            priority={true}
-            width={600}
           />
           </div>
         </div>

@@ -1,6 +1,5 @@
 import { WMlogo } from "../../assets"
 import { navLinks } from "@/constants"
-import Image from "next/image"
 import { useEffect, useState } from "react";
 
 export default function Navbar() {
@@ -71,11 +70,13 @@ export default function Navbar() {
   return (
     <nav className={`flex justify-between py-5 ${navbar ? "navbar-down" : "navbar-up"}`}>
       <div className="flex-center">
-        <Image 
-        src={WMlogo}
-        alt="Web-Masters logo"
-        width={50}
-        />
+        <a href='/'>
+          <img 
+          src={'/assets/logoImgs/WMlogo.png'}
+          alt="Web-Masters logo"
+          className={'w-[50px]'}
+          />
+        </a>
       </div>
       <ul className="md:flex hidden">
         {navLinks.map((link, index) => (

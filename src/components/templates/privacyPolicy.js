@@ -1,7 +1,5 @@
 import { Card } from '../index'
 import { privacyPolicyText } from '@/constants/privacyPolicyText'
-import { WMlogo } from "../../assets"
-import Image from "next/image"
 import { useEffect, useState } from "react";
 import Link from 'next/link'
 
@@ -27,13 +25,15 @@ export default function PrivacyPolicy() {
       <>
         <nav className={`flex justify-between py-5 ${navbar ? "navbar-down" : "navbar-up"}`}>
             <div className="flex-center">
-                <Image 
-                src={WMlogo}
+              <a href='/'>
+                <img 
+                src={'/assets/logoImgs/WMlogo.png'}
                 alt="Web-Masters logo"
-                width={50}
+                className={'w-[50px]'}
                 />
+              </a>
             </div>
-            <ul className="md:flex hidden">
+            <ul>
                 <li className={`text-[18px] cursor-pointer hover:text-primary`}><Link href="/">Strona główna</Link></li>
             </ul>
         </nav>

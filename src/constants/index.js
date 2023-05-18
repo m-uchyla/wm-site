@@ -56,22 +56,22 @@ export const howItsDone = [
     {
         title: "Przedstawiasz swój pomysł",
         description: "Konsultujemy się z Tobą i uważnie słuchamy Twoich potrzeb jakie masz względem swojej strony. Doradzamy również jakie rozwiązania mogą zostać zaimplementowane, żeby Twoja strona internetowa była stworzona idealnie pod Ciebie i Twoich klientów!",
-        img: idea
+        img: '/assets/isometric/idea.png'
     },
     {
         title: "Tworzymy wizualizację",
         description: "Posługując się najnowszymi technologiami upewniamy się, że produkt, który będzie dla Ciebie tworzony, spełni wszystkie Twoje wymagania i będziesz miło zaskoczony finalnym wyglądem oraz funkcjonalnością Twojej witryny internetowej.",
-        img: preview
+        img: '/assets/isometric/preview.png'
     },
     {
         title: "Pracujemy nad Twoją stroną",
         description: "Wracasz do swojej pracy, w której jesteś ekspertem, a w międzyczasie powstaje twoja indywidualna strona internetowa, która wypozycjonuje Twój biznes w Google, oraz przekaże potencjalnym klientom wszystkie potrzebne informacje do kontaktu z Tobą.",
-        img: working
+        img: '/assets/isometric/working.png'
     },
     {
         title: "Gotowe!",
         description: "Twój biznes jest już widoczny w sieci! Twoja strona jest wizytówką Twojego biznesu, którą możesz się posługiwać w internecie oraz poza nim. Dzięki nowoczesnemu wyglądowi oraz funkcjonalności Twojej witryny masz pewność, że jesteś odbierany jako ekspert i profesjonalista w swojej branży!",
-        img: done
+        img: '/assets/isometric/done.png'
     },
 ]
 
@@ -187,7 +187,7 @@ export const portfolio = [
     {
         title:"Spartan Trener",
         desc: "Landing site dla trenera personalnego",
-        img:trainer,
+        img:'/assets/portfolio/trainer.png',
         link:"https://spartan-trener.online/",
         features:[
             'Landing site',
@@ -199,7 +199,7 @@ export const portfolio = [
     {
         title:"Pizza Eccezionale",
         desc: "Strona internetowa pizzerii z kilkoma podstronami",
-        img:pizza,
+        img:'/assets/portfolio/pizza.png',
         link:"https://pizzaeccezionale.online/",
         features:[
             '3 podstrony',
@@ -216,24 +216,24 @@ export const testimonials = [
         name:"Kuba",
         job: "Java Developer",
         desc:"This is a great app and the value is amazing. Since I purchased it I have been using it everyday! Highly recommend it. ",
-        img:testimonial01
+        img:'/assets/testimonials/testimonial01.png'
     },
     {
         name:"Vladyslaw",
         job: "Software Developer",
         desc:"Zespół Web-Masters.pl znakomicie wywiązuje się ze swoich zadań. Współpraca z nimi była przyjemnością.",
-        img:testimonial_vladyslaw
+        img:'/assets/testimonials/testimonial_Vladyslaw.png'
     },
     {
         name:"Dawid",
         job: "Software Developer",
         desc:"This is a great app and the value is amazing. Since I purchased it I have been using it everyday! Highly recommend it. ",
-        img:testimonial01
+        img:'/assets/testimonials/testimonial01.png'
     },
     {
         name:"Tomek",
         job: "DevOps",
         desc:"This is a great app and the value is amazing. Since I purchased it I have been using it everyday! Highly recommend it. ",
-        img:testimonial01
+        img:'/assets/testimonials/testimonial01.png'
     },
 ]
