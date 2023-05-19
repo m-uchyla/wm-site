@@ -31,7 +31,7 @@ export default function Hero() {
           <div className="flex-1 max-w-[60vw] sm:max-w-[40vw] md:max-w-[50vw] block sm:hidden lg:block">
           <img 
             className="float-right w-[600px]"
-            src={'/assets/hero.png'}
+            src={'/assets/hero.webp'}
             alt="Komputer"
           />
           </div>

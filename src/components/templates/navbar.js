@@ -72,7 +72,7 @@ export default function Navbar() {
       <div className="flex-center">
         <a href='/'>
           <img 
-          src={'/assets/logoImgs/WMlogo.png'}
+          src={'/assets/logoImgs/WMlogo.webp'}
           alt="Web-Masters logo"
           className={'w-[50px]'}
           />

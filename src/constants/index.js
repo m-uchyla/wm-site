@@ -187,7 +187,7 @@ export const portfolio = [
     {
         title:"Spartan Trener",
         desc: "Landing site dla trenera personalnego",
-        img:'/assets/portfolio/trainer.png',
+        img:'/assets/portfolio/trainer.webp',
         link:"https://spartan-trener.online/",
         features:[
             'Landing site',
@@ -199,7 +199,7 @@ export const portfolio = [
     {
         title:"Pizza Eccezionale",
         desc: "Strona internetowa pizzerii z kilkoma podstronami",
-        img:'/assets/portfolio/pizza.png',
+        img:'/assets/portfolio/pizza.webp',
         link:"https://pizzaeccezionale.online/",
         features:[
             '3 podstrony',

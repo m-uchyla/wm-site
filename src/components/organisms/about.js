@@ -11,7 +11,7 @@ export default function About() {
         <div className="flex flex-col xl:flex-row gap-16">
           <div className="flex-1 md:block hidden mx-auto">
             <img 
-              src={'/assets/about.png'}
+              src={'/assets/about.webp'}
               alt="Edytor kodu"
               className="w-[600px]"
             />
