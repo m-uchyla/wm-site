@@ -3,8 +3,8 @@ import { ImCheckmark, ImWarning } from "react-icons/im"
 
 export default function Alert({type, header, subheader, className, id}) {
     return (
-      <div className={`${id} fixed md:top-24 md:right-10 alert ${className}`}>
-        <Card className={"flex-center flex-row gap-5 p-7 bg-[rgb(20,20,31)]"}>
+      <div className={`${id} fixed top-24 right-10 alert ${className}`}>
+        <Card className={"flex-center flex-row gap-5 p-7 bg-[rgb(20,20,29)]"}>
             <div>
                 {(type==="success") ? 
                 <ImCheckmark className="text-primary text-[30px]" />

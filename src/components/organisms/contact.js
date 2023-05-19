@@ -38,7 +38,7 @@ export default function Contact() {
         action: "Contact form email"
       });
 
-      emailjs.sendForm('service_contactForm_WM', 'template_wm_2', contactForm.current, 'LbjIHyDLBTMjgCzYg');
+     // emailjs.sendForm('service_contactForm_WM', 'template_wm_2', contactForm.current, 'LbjIHyDLBTMjgCzYg');
     }
     
     
@@ -93,7 +93,7 @@ export default function Contact() {
         {(emailAlert.type !== null) ?
         <Alert id={"alert"} className={`${fadeIn ? " fade-in " : ""} ${fadeOut ? " fade-out " : ""}`} type={emailAlert.type} header={emailAlert.header} subheader={emailAlert.subheader}/>
         :
-        <Alert id={"alert"} className={`${fadeIn ? " fade-in " : ""} ${fadeOut ? " fade-out " : ""}`} type={emailAlert.type} header={emailAlert.header} subheader={emailAlert.subheader}/>
+        ""
         }
       </section>
     )
