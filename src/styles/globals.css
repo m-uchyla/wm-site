@@ -230,7 +230,7 @@ footer {
   height: 40px;
   cursor: pointer;
   transition: all .5s ease-in-out;
-
+  z-index: 1;
 }
 
 .menu_burger-btn {
@@ -336,6 +336,11 @@ footer {
   left: 50%;
   transform: translate(-50%, 0%);
   text-align: center;
+  @apply
+  md:h-auto
+  h-[105px]
+  md:w-auto
+  w-[230px];
 }
 
 .portfolio-container:hover .portfolio-image {

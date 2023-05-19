@@ -26,10 +26,10 @@ export default function Portfolio () {
                     alt={p.title}
                 />
                 <div
-                className='portfolio-desc p-4 bg-card rounded-xl md:block hidden'>
-                    <h3 className='text-[28px] font-semibold'>{p.title}</h3>
-                    <p className='my-2 text-secondaryText'>{p.desc}</p>
-                    <p className='mb-2 text-primary font-semibold'>Zobacz więcej</p>
+                className='portfolio-desc p-4 bg-card rounded-xl'>
+                    <h3 className='lg:text-[28px] text-[18px] font-semibold'>{p.title}</h3>
+                    <p className='lg:my-2 my-0 lg:text-[20px] text-[12px] text-secondaryText'>{p.desc}</p>
+                    <p className='mb-2 lg:text-[20px] text-[13px] text-primary font-semibold'>Zobacz więcej</p>
                 </div>
                 </a>
             </div>

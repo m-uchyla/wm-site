@@ -93,7 +93,7 @@ export default function Contact() {
         {(emailAlert.type !== null) ?
         <Alert id={"alert"} className={`${fadeIn ? " fade-in " : ""} ${fadeOut ? " fade-out " : ""}`} type={emailAlert.type} header={emailAlert.header} subheader={emailAlert.subheader}/>
         :
-        ""
+        <Alert id={"alert"} className={`${fadeIn ? " fade-in " : ""} ${fadeOut ? " fade-out " : ""}`} type={emailAlert.type} header={emailAlert.header} subheader={emailAlert.subheader}/>
         }
       </section>
     )
